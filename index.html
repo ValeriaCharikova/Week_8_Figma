@@ -21,115 +21,47 @@
       rel="stylesheet"
     />
     <link rel="stylesheet" href="./assets/styles/styles.css" />
-    <style>
-      .body {
-        font-family: "Roboto Slab";
-        font-style: normal;
-        font-weight: 300;
-        font-size: 20px;
-        line-height: 160%;
-        margin-left: 125px;
-      }
-      .header {
-        display: flex;
-        justify-content: space-around;
-        align-items: center;
-        height: 20vh;
-      }
-      .btn {
-        background-color: #5222d0;
-        border-radius: 25px;
-        color: #fff;
-      }
-      .main {
-        display: flex;
-        justify-content: space-between;
-        font-style: normal;
-      }
-      .heading {
-        font-size: 60px;
-        line-height: 120%;
-        font-weight: bold;
-      }
-      .main___text {
-        font-weight: 300;
-        font-size: 20px;
-        line-height: 160%;
-      }
-      .button-buy {
-        margin-top: 30px;
-      }
-      .nav-link {
-        color: #5222d0;
-      }
-      .features__nav {
-        color: black;
-      }
-      .test {
-        display: grid;
-        grid-template-columns: repeat(3, 1fr);
-        grid-template-rows: 1fr 1fr;
-        row-gap: 50px;
-      }
-      .features_block {
-        width: 365px;
-        height: 500px;
-      }
-      .subscribe {
-        background-color: #ec615b;
-        height: 233px;
-        padding-left: 18px;
-        display: flex;
-        flex-direction: column;
-        justify-content: space-around;
-        align-items: flex-start;
-      }
-      .features__heading {
-        font-weight: bold;
-      }
-      .subscribe__heading {
-        color: #fff;
-      }
-    </style>
   </head>
+
   <body class="body">
     <header class="header">
-      <img src="./assets/img/logo.png" alt="logo" />
+      <img class="logo" src="./assets/img/logo.png" alt="logo" />
       <button type="button" class="btn">
-        Корзина <img src="./assets/img/cart.png" alt="корзина" />
+        Корзина <img src="./assets/img/cart.png" alt="cart" />
       </button>
     </header>
     <section class="main">
-      <div>
-        <h1 class="main__heading heading">
+      <div class="main__content">
+        <h1 class="heading main__heading">
           Виртуальная <br />
           реальность без <br />
           проводов
         </h1>
-        <p class="main__text">
+        <p class="text main__text">
           Лучшее, что случалось с виртуальным миром <br />
           в реальности. Новый компактный шлем <br />
           без проводов и дорогих комьютеров.
         </p>
-        <button type="button" class="btn btn-lg button-buy">
-          Купить <img src="./assets/img/card.png" alt="карта" />
+        <button type="button" class="btn btn-lg main__btn">
+          Купить <img src="./assets/img/card.png" alt="card" />
         </button>
       </div>
       <div>
-        <img src="./assets/img/pic.png" />
+        <img src="./assets/img/pic.png" alt="vr girl"/>
       </div>
     </section>
-    <nav class="nav">
+    <nav class="nav main__nav">
       <a class="nav-link" href="#">Возможности</a>
       <a class="nav-link" href="#">Где купить</a>
       <a class="nav-link" href="#">Доставка</a>
       <a class="nav-link" href="#">Помощь</a>
     </nav>
     <section class="features">
-      <h1 class="features__heading heading">Возможности</h1>
-      <div class="test">
-        <div class="features_block">
-          <img src="./assets/img/illustration_1.png" />
+      <h1 class="heading features__heading">Возможности</h1>
+      <br />
+      <div class="features__content">
+        <div class="features__block">
+          <img src="./assets/img/illustration_1.png" alt="scientist" />
           <h2 class="features__heading">Без проводов</h2>
           <p>
             Шлем работает без проводов. <br />
@@ -138,8 +70,8 @@
             <br />трекеры.
           </p>
         </div>
-        <div class="features_block">
-          <img src="./assets/img/illustration_2.png" />
+        <div class="features__block">
+          <img src="./assets/img/illustration_2.png" alt="robot" />
           <h2 class="features__heading">Без компьютера</h2>
           <p>
             Современным VR-шлемам нужен <br />
@@ -149,8 +81,8 @@
             просто наслаждайтесь.
           </p>
         </div>
-        <div class="features_block">
-          <img src="./assets/img/Illustration_3.png" />
+        <div class="features__block">
+          <img src="./assets/img/Illustration_3.png" alt="worker" />
           <h2 class="features__heading">До 10 часов работы</h2>
           <p>
             Несмотря на компактность <br />
@@ -160,7 +92,7 @@
             ресурсоемкие игры.
           </p>
         </div>
-        <div class="features_block">
+        <div class="features__block">
           <h2 class="features__heading">Сотни игр</h2>
           <p>
             Уже сейчас вам доступно более <br />
@@ -170,7 +102,7 @@
             их станет еще больше.
           </p>
         </div>
-        <div class="features_block">
+        <div class="features__block">
           <h2 class="features__heading">Почти даром</h2>
           <p>
             По сравнению с другими <br />
@@ -179,7 +111,7 @@
             экономите на мощном компьютере.
           </p>
         </div>
-        <div class="features_block subscribe">
+        <div class="features__block subscribe">
           <h2 class="features__heading subscribe__heading">Новости</h2>
           <input type="email" placeholder="Эл.почта" />
           <button type="button" class="btn">Подписаться</button>

@@ -1,0 +1,63 @@
+.body {
+  font-family: "Roboto Slab";
+  font-style: normal;
+  font-weight: 300;
+  font-size: 20px;
+  line-height: 160%;
+  margin-left: 125px;
+}
+.header {
+  display: flex;
+  justify-content: space-around;
+  align-items: center;
+  height: 20vh;
+}
+.main {
+  display: flex;
+  justify-content: space-between;
+  font-style: normal;
+}
+.nav-link {
+  color: #5222d0;
+}
+.features__nav {
+  color: black;
+}
+.features__content {
+  display: grid;
+  grid-template-columns: repeat(3, 1fr);
+  grid-template-rows: 1fr 1fr;
+  row-gap: 50px;
+}
+.features__block {
+  width: 365px;
+  height: 500px;
+}
+.subscribe {
+  background-color: #ec615b;
+  height: 233px;
+  padding-left: 18px;
+  display: flex;
+  flex-direction: column;
+  justify-content: space-around;
+  align-items: flex-start;
+}
+.btn {
+  background-color: #5222d0;
+  border-radius: 25px;
+  color: #fff;
+}
+.main__btn {
+  margin-top: 30px;
+}
+.heading {
+  font-size: 60px;
+  line-height: 120%;
+  font-weight: bold;
+}
+.features__heading {
+  font-weight: bold;
+}
+.subscribe__heading {
+  color: #fff;
+}
